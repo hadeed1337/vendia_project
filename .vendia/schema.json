@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vendia Share JSON schema",
+  "type": "object",
+  "x-vendia-indexes": {},
+  "x-vendia-acls": {
+    "Test-acls": {
+      "type": "Test"
+    },
+    "Device-acls": {
+      "type": "Device"
+    },
+    "Orgs-acls": {
+      "type": "Orgs"
+    }
+  },
+  "properties": {
+    "Test": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Device": {
+            "title": "Device",
+            "type": "string"
+          },
+          "TestID": {
+            "title": "TestID",
+            "type": "integer"
+          },
+          "OrgAssignment": {
+            "title": "OrgAssignment",
+            "type": "string"
+          },
+          "TestName": {
+            "title": "TestName",
+            "type": "string"
+          },
+          "TestMethod": {
+            "title": "TestMethod",
+            "type": "string"
+          },
+          "Notes": {
+            "title": "Notes",
+            "type": "string"
+          },
+          "Completed": {
+            "title": "Completed",
+            "description": "",
+            "type": "boolean"
+          },
+          "UpdatedBy": {
+            "title": "UpdatedBy",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "x-vendia-unique": []
+      },
+      "title": "Test"
+    },
+    "Device": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "title": "DeviceName",
+            "description": "",
+            "type": "string"
+          },
+          "Completed": {
+            "title": "Completed",
+            "type": "boolean"
+          },
+          "Archived": {
+            "title": "Archived",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "DeviceName"
+        ],
+        "x-vendia-unique": [
+          "DeviceName"
+        ]
+      },
+      "title": "Device"
+    },
+    "Orgs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "OrgName": {
+            "title": "OrgName",
+            "type": "string",
+            "description": ""
+          }
+        },
+        "required": [
+          "OrgName"
+        ],
+        "x-vendia-unique": []
+      },
+      "title": "Orgs"
+    }
+  }
+}

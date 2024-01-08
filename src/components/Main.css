@@ -1,0 +1,212 @@
+
+.header {
+  background-color: #5d5c61;
+  color: white;
+  text-align: center;
+  padding: 75px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.topH2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.entity {
+  padding-bottom: 24px;
+}
+
+.table-container {
+  margin-top: 64px; 
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+}
+
+
+.button {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+  
+  display: flex;
+  align-items: center;
+  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: auto;
+  gap: 10px;
+}
+
+.mrt-thead {
+  background-color: #139abb;
+}
+
+.mrt-tbody tr {
+  background-color: red;
+}
+
+.device-container {
+  background-color: #139abb;
+  padding: 15px;
+  
+  padding-right: 100px;
+  margin: auto;
+  background-image: linear-gradient(to left, #a3bded 0%, #6991c7 100%);
+
+}
+
+
+.device-entry { 
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.device-name {
+  margin: 20px 0;
+  margin-right: auto;
+  font-size: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.myDataGrid {
+  background-color: white;
+}
+
+.white-outline-form .MuiInputLabel-root {
+  color: white !important;
+}
+
+.white-outline-form .MuiInputBase-input {
+  color: white !important;
+}
+
+.white-outline-form .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.white-outline-form .MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.white-outline-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.white-outline-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.whiteDataGrid .MuiDataGrid-cell,
+.whiteDataGrid .MuiDataGrid-columnHeaderTitle,
+.whiteDataGrid .MuiDataGrid-columnHeaders,
+.whiteDataGrid .MuiTablePagination-caption,
+.whiteDataGrid .MuiTablePagination-selectLabel,
+.whiteDataGrid .MuiDataGrid-footerContainer,
+.whiteDataGrid .MuiDataGrid-toolbarContainer,
+.whiteDataGrid .MuiTablePagination-root, 
+.whiteDataGrid .MuiTablePagination-selectIcon,
+.whiteDataGrid .MuiTablePagination-select,
+.whiteDataGrid .MuiTablePagination-input,
+.whiteDataGrid .MuiInputBase-input,
+.whiteDataGrid .MuiSelect-icon {
+  color: white; /* Set text color to white for all DataGrid components */
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Take full width */
+  padding: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #ffffff;
+  margin: 20px 0;
+  text-align: center; /* Centering the title */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between; /* Distributes items evenly */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.homeLink {
+  padding: 10px 20px;
+  margin: 10px 0; /* Adjusted margin for top and bottom only */
+  background-color: #5d5c61;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.homeLink:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.homeLink:active {
+  transform: translateY(0);
+}
+
+.MuiButton-contained  {
+  font-size: 15px !important;
+  background-color: #2E3B55;
+}
